@@ -1,3 +1,8 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.dirname(__FILE__)
+$:.unshift File.join(File.dirname(__FILE__), '..')
+
 require "utils"
 
 def get_euros()
@@ -7,6 +12,8 @@ end
 def get_exchange_rate()
   Utils.to_number(Utils.prompt("What is the exchange rate?"))
 end
+
+# what is the airspeed velocity of an unladen swallow?
 
 def convert(euros, exchange_rate)
   euros * (exchange_rate / 100)

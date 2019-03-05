@@ -35,6 +35,7 @@ end
 if __FILE__ == $0
   subtotal = calculate_subtotal()
   tax = calculate_tax(subtotal)
+
   puts("Subtotal: $#{subtotal}")
   puts("Tax: $#{tax}")
   puts("Total: $#{subtotal + tax}")
